@@ -44,7 +44,10 @@ footer{text-align:center;color:#8a92a8;font-size:12px;padding:25px}
 <p id="adminMsg" class="small muted"></p><h3>Наборы на этом устройстве</h3><div id="adminList" class="wordlist"></div></div>
 </section>
 </main><footer>WORD CLUB · Учись в своём темпе 💜</footer>
-<script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>const SUPABASE_URL = "https://wxxpoqhuxpwzcjcyngtf.supabase.co";
+const SUPABASE_KEY = "sb_publishable_O98EFRJHmOmI9BojxD6e6A_1VvsGddB";
+const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 const starter=[
 {id:"gg3u1",level:"Go Getter 3",topic:"Unit 1 · School",words:[["classroom","класс"],["board","доска"],["desk","парта"],["pencil case","пенал"],["ruler","линейка"],["school bag","школьная сумка"]]},
 {id:"gg3u2",level:"Go Getter 3",topic:"Unit 2 · Free time",words:[["play football","играть в футбол"],["ride a bike","кататься на велосипеде"],["listen to music","слушать музыку"],["watch TV","смотреть телевизор"]]},
